@@ -5,7 +5,7 @@ maintainer Amar Singh
 # Command to update and install Apache packages
 RUN apt-get update && apt-get install apache2 -y
 # Move existing index.html file
-RUN rm -f /var/www/html/index.html
+copy index.html /var/www/html
 # open port 
 EXPOSE 80
 # Command to run Apache server in background
