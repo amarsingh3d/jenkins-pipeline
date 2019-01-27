@@ -8,11 +8,11 @@ stage('Build Docker Imagae'){
         def imagename = "ubuntu:16"
         powershell "docker build -t  ${imagename} ."
     }
-stage(Stop Existing Container'){
+stage('Stop Existing Container'){
      def container = "apache2"
      powershell "docker stop ${container}"
     }
-stage(Remove Existing Container'){
+stage('Remove Existing Container'){
      def container = "apache2"
      powershell "docker rm ${container}"
     }    
