@@ -7,26 +7,25 @@ node {
 stage('Git Checkout') {
     git 'https://github.com/amarsingh3d/jenkins-pipeline'
     }
+    
 stage('Build Docker Imagae'){
-        
      powershell "docker build -t  ${imagename} ."
     }
+    
 stage('Stop Existing Container'){
-     
      powershell "docker stop ${container}"
     }
-stage('Remove Existing Container'){
-     
-     powershell "docker rm ${container}"
-    }    
-stage ('Runing Container to test built Docker Image'){
     
+stage('Remove Existing Container'){
+     powershell "docker rm ${container}"
+    }
+    
+stage ('Runing Container to test built Docker Image'){
     powershell "docker run -dit --name ${container} -p 80:80 ${imagename}"
     }
-
+    
 stage('Tag Docker Image'){
-     
-     powershell "docker tag ${imagename} ${dockeruser}/ubuntu:16.04"
+    powershell "docker tag ${imagename} ${dockeruser}/ubuntu:16.04"
     }
 
 stage('Docker Login and Push Image'){
