@@ -8,24 +8,24 @@ stage('Git Checkout') {
     git 'https://github.com/amarsingh3d/jenkins-pipeline'
     }
 stage('Build Docker Imagae'){
-        //def imagename = "ubuntu:16"
-        powershell "docker build -t  ${imagename} ."
+        
+     powershell "docker build -t  ${imagename} ."
     }
 stage('Stop Existing Container'){
-     //def container = "apache2"
+     
      powershell "docker stop ${container}"
     }
 stage('Remove Existing Container'){
-     //def container = "apache2"
+     
      powershell "docker rm ${container}"
     }    
 stage ('Runing Container to test built Docker Image'){
-    //def imagename = "ubuntu:16"
+    
     powershell "docker run -dit --name ${container} -p 80:80 ${imagename}"
     }
 
 stage('Tag Docker Image'){
-     //def imagename = "ubuntu:16"
+     
      powershell "docker tag ${imagename} ${dockeruser}/ubuntu:16.04"
     }
 
