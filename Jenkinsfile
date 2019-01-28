@@ -27,8 +27,8 @@ stage('Tag Docker Image'){
     }
 
 stage('Docker Login and Push Image'){
-    withCredentials([usernamePassword(credentialsId: 'b55aa781-dd85-4f0c-9971-1fab36bacfc3', passwordVariable: 'docker_password', usernameVariable: 'docker_user')]) {
-    powershell "docker login -u ${docker_user} -p ${docker_password}"
+    withCredentials([usernamePassword(credentialsId: '5663cdf8-713c-454e-be9e-255cf3d61018', passwordVariable: 'dockerpasswd', usernameVariable: 'dockeruser')]) {
+    powershell "docker login -u ${dockeruser} -p ${dockerpasswd}"
     }
     powershell "docker push amarsingh3d/ubuntu:16.04"
     }
