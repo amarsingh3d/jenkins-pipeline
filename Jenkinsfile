@@ -1,4 +1,4 @@
-def dockeruser = "amarsingh3d"
+def ddockeruser = "amarsingh3d"
 def imagename = "ubuntu:16"
 def container = "apache2"
 node {
@@ -25,7 +25,7 @@ stage ('Runing Container to test built Docker Image'){
     }
     
 stage('Tag Docker Image'){
-    powershell "docker tag ${imagename} ${dockeruser}/ubuntu:16.04"
+    powershell "docker tag ${imagename} ${env.dockeruser}/ubuntu:16.04"
     }
 
 stage('Docker Login and Push Image'){
