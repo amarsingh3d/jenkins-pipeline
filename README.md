@@ -9,5 +9,13 @@ The definition of a Jenkins Pipeline is written into a text file (called a Jenki
 
 **Prerequisites:**
 1- Windows machine installed following software.
+
 2- Installed Docker on Windows.
+
 3- Installed Jenkins
+
+**Step 1- Install Docker on Windows:**
+I'm using Windows 7 for the demonstration, You can follow this blog to finish the Docker for Windows installation.
+
+**Step 2- Install Jenkins On Windows:**
+Follow this blog to finish the Jenkins installation on Windows: How to Install Jenkins on Windows Machine.
