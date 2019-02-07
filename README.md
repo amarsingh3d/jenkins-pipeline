@@ -54,7 +54,7 @@ On the Pipeline section select Definition  pipeline Script from SCM > Select typ
 
 ![image](https://3.bp.blogspot.com/-znQnObodVYM/XFkWD_LeJ4I/AAAAAAAAFMc/QIovbwRFpmQLR5Igy-6QfJrmPQrfDDqOACLcBGAs/s1600/jk1.png)
 
-Jenkins Job is ready to build.
+In my case I'm using public git repository, if you have private repository define you login details in the pipeline section. Jenkins Job is ready to build.
 
 **Step 5- Build and test Jenkins job:**
 
