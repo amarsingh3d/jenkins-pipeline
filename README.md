@@ -14,11 +14,17 @@ The definition of a Jenkins Pipeline is written into a text file (called a Jenki
 
 3- Installed Jenkins
 
+4- Docker Hub Account
+
 **Step 1- Install Docker on Windows:**
 I'm using Windows 7 for the demonstration, You can follow this blog to finish the Docker for Windows installation.
 
+https://linuxhowtoguide.blogspot.com/2019/02/how-to-install-docker-in-windows-7.html
+
 **Step 2- Install Jenkins On Windows:**
 Follow this blog to finish the Jenkins installation on Windows: How to Install Jenkins on Windows Machine.
+
+https://linuxhowtoguide.blogspot.com/2018/07/how-to-install-jenkins-on-windows.html
 
 **Step 3- Complete pre-requisites:**
 To add docker hub login details open Jenkins and go to add credentials page:
