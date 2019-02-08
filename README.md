@@ -1,4 +1,4 @@
-# Continuous Deployment for Docker Image, Build and push Docker image to Docker hub using Jenkins Pipeline
+# Continuous Deployment for Docker Image, Build and push Docker image to Docker hub using Jenkins Pipeline from Windows System
 **Jenkins Pipeline:**
 
 Jenkins Pipeline uses a build pipeline plugin which supports Continuous delivery pipeline into Jenkins.
